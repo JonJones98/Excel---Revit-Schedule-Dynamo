@@ -1,0 +1,34 @@
+
+-PURPOSE
+
+The purpose of this dynamo code is to automate the synchronization of data between the 
+external lighting schedule which is in excel,the Revit lighting fixture families,and 
+the built-in Revit lighting schedule.
+_________________________________________________________________________________________________________________________________________________________________________
+
+-HOW IT WORKS
+
+--Excel
+	In excel, you will have to make sure the schedule is aligned with the guidelines found in the Excel Schedule Rules.txt in the documentation folder.
+
+--Dynamo
+	1)The code will pull in the excel light fixture schedule and organize/categorize the data in the Excel Fixture Schedule Access Point section.
+
+	2)Each different light fixture families that are hosted in the model are accounted for and organized in the Revit Element Acess Point section.
+
+	3)Both the Excel data and the Revit fixture family data(including parameters) are inputed into the iron python script "The Brain" and are matched and indexed.
+
+	4)After, the index position is set, all of the column data (such as desciption,wattage,color,etc) are organized and placed in the corresponding 
+  	  index position so that the correct excel data aligns with correct revit fixture type.
+
+	5)Once the iron python script is complete it will output the indexed data to the Revit Element Data Sync section. 
+	  With the dynamo node "Element.SetParameterByName", the indexed revit family data is inputed into the element section, 
+	  the indexed parameters are inputed into the parameter section, and the corresponded indexed excel data are inputed into the value section.
+  	  This node takes all inputed data and updates the parameter values for revit fixture types in the model. 
+
+--Revit
+	In revit, you will have to create a schedule using to the same parameter fields found in the Fixture Family Rule.txt in the documentation folder.
+__________________________________________________________________________________________________________________________________________________________________________
+
+**Note
+	In order to run dynamo code, go to the revit model> Manage > the Visual Programming Section > Dynamo > Open Dynamo Script

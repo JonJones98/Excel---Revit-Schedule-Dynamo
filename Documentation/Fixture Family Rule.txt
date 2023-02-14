@@ -1,0 +1,22 @@
+Fixture Family Rule
+
+	PARAMETER CHECK-LIST
+
+	EXCEL SCHEDULE NAME				PARAMETER KEYNAME		ADDITION INFORMATION
+	+TYPE NAME					'Identity Type Mark'		N/A
+	+DESCRIPTION					'Description'			Located in Identity Data-Text
+	+MANUFACTURER AND CATOLOG NUMBER		'Manufacturer'			Located in Identity Data-Text
+							'Catalog Number'		N/A
+							'Equivalent Manufacturers'	N/A
+	+FINISH						'Finish'			Located in Identity Data-Text
+	+TYPE						'LED'				N/A
+	+CCT						'Color Temperature (CCT)'	Located in Identity Data-Color Temperature
+	+CRI						'Color Rendering Index (CRI)'	Located in Identity Data-Integer
+	+LUMEN						'Lumen Ouput'			Located in Identity Data
+	+INPUT WATTS					'Watts Per Foot'		Located in Electrical_Loads-Wattage
+		 						'WATTS' 		Located in Electrical_Loads-Wattage *Must have (BRA_Length Modeled / 1') * Watts Per Foot {for watts per foot}
+	+VOLTS						'Voltage Nominal'		Located in Electrical_Loads-Voltage
+	+DIM/NON-DIM					'Dim/ Non-Dim'			Located in Identity Data-Text
+	+LOCATION					'Location'			Located in Identity Data-Text
+	+NOTES						'Notes'				Located in Identity Data-Text
+	+SCHEDULE APPEAR ON (HIDDEN)			'Schedule Appear On'		N/A

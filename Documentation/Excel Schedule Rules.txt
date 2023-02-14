@@ -1,0 +1,18 @@
+Excel Schedule Rules
+
+	-Type:			Type names must match
+	-Description:		None
+	-Manufacter:		Format: Row 1 - "Manufactuers Name"
+   	  Catolog #   	   		Row 2 - "Catolog #"
+	-Alternate Manufacters: Must start with "Approved Equal By:" 
+	-Finish:		None
+	-CCT:			Must have "K" after Number
+	-CRI:			Must have "CRI" after Number
+	-Lumen:			None
+	-Watts:			Must have "W" or"W/ft"
+	-Volts:			Must have "UNV","UNIV",or "V" at end
+	-DIM/NON-DIM:		None
+	-Location:		None
+	-Notes:			None
+
+*GENERAL RULE- No extra spaces or line breaks after information
